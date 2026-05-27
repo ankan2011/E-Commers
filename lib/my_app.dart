@@ -1,4 +1,4 @@
-import 'package:flutter/cupertino.dart';
+import 'package:e_commerce/utils/theme/theme.dart';
 import 'package:flutter/material.dart';
 
 class MyApp extends StatelessWidget {
@@ -8,9 +8,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData(
-       useMaterial3:true
-      ),
+      themeMode: ThemeMode.system,
+      theme: CAppTheme.lightTheme,
+      darkTheme: CAppTheme.darkTheme,
       home: Scaffold(
 
       )

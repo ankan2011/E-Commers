@@ -1,10 +1,8 @@
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
 
-class CClass {
+class CColors{
 
-  CClass._();
+  CColors._();
 
   // Primary Color
   static const Color primary = Color(0xFF0857A0);
