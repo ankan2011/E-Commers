@@ -1,5 +1,9 @@
+import 'package:e_commerce/features/authentication/screens/signup/verify_email.dart';
 import 'package:e_commerce/features/authentication/screens/signup/widget/privary_policycheckbox.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
+import 'package:get/get_core/src/get_main.dart';
 import 'package:iconsax/iconsax.dart';
 
 import '../../../../../common/widgets/button/elevated_button.dart';
@@ -26,7 +30,7 @@ class CSignupForm extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(height: CSizes.spaceBtwInputFields),
+            SizedBox(width: CSizes.spaceBtwInputFields),
             Expanded(
               child: TextFormField(
                 decoration: InputDecoration(
@@ -72,12 +76,11 @@ class CSignupForm extends StatelessWidget {
         SizedBox(height: CSizes.spaceBtwInputFields),
 
         /// Created
-        CElevatedButton(onPressed: (){}, child: Text(CTexts.createAccount)),
+        CElevatedButton(onPressed: (){
+          Get.to(VerifyEmailScreen());
+        }, child: Text(CTexts.createAccount)),
         SizedBox(height: CSizes.spaceBtwInputFields/1),
 
-
-        /// --Divider--
-        /// --Footer--
       ],
     );
   }

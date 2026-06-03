@@ -1,3 +1,4 @@
+import 'package:e_commerce/features/authentication/screens/forget_password/forget_password.dart';
 import 'package:e_commerce/features/authentication/screens/signup/signup.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -47,7 +48,9 @@ class CLoginForm extends StatelessWidget {
             ),
 
             /// ForgetPassword
-            TextButton(onPressed: () {}, child: Text(CTexts.forgetPassword)),
+            TextButton(onPressed: () {
+              Get.to(ForgetPasswordScreen());
+            }, child: Text(CTexts.forgetPassword)),
           ],
         ),
         SizedBox(height: CSizes.spaceBtwSections),

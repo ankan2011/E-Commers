@@ -13,5 +13,7 @@ class CImages {
   static const String googleIcon = 'assets/logo/google-icon.png';
   // static const String profileLogo = 'assets/logo/profile.png';
 
-
+  // authentication images
+  static const String accountCreatedImage = 'assets/images/account_created.png';
+  static const String mailSentImage = 'assets/images/mail_illustration.png';
 }
